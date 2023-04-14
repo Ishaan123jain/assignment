@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assessment</title>
+	<style>
+		.question {
+			margin: 20px 0;
+		}
+		
+		p {
+			margin: 0;
+		}
+		
+		input[type="text"] {
+			padding: 5px;
+			margin: 10px 0;
+			border: none;
+			border-bottom: 1px solid #ccc;
+		}
+		
+		button {
+			padding: 10px 20px;
+			background-color: #6610f2;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		
+		button:hover {
+			background-color: #3210f2;
+		}
+	</style>
+</head>
+<body>
+	<h1>Assessment</h1>
+
+	<form method="post" action="answers.php">
+		<div class="question">
+			<p>Question 1: What is the capital of France?</p>
+			<input type="text" name="answer1" id="answer1">
+		</div>
+
+		<div class="question">
+			<p>Question 2: What is the square root of 144?</p>
+			<input type="text" name="answer2" id="answer2">
+		</div>
+
+		<div class="question">
+			<p>Question 3: Who was the first man to walk on the moon?</p>
+			<input type="text" name="answer3" id="answer3">
+		</div>
+
+		<div class="question">
+			<p>Question 4: What is the value of pi (π) to two decimal places?</p>
+			<input type="text" name="answer4" id="answer4">
+		</div>
+
+		<div class="question">
+			<p>Question 5: Which country won the 2018 FIFA World Cup?</p>
+			<input type="text" name="answer5" id="answer5">
+		</div>
+
+		<div class="question">
+			<p>Question 6: What is the largest continent by land area?</p>
+			<input type="text" name="answer6" id="answer6">
+		</div>
+
+		<button name="submit" onclick="checkAnswers()">SUBMIT</button>
+		
+	</form>
+	
+</body>
+</html>
